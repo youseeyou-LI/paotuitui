@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
         System.out.println(1111);
+        System.out.println(121312);
 
     }
 }
