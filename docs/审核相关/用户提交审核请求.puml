@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Actor 用户 as user
+participant AccountFilter as filter
+participant account
+participant image
+database redis
+database mysql
+autonumber
+user -> filter :点击认证，携带token
+filter -> redis :查询token
+alt token未过期
+redis --> filter: 返回用户信息
+else token过期
+filter -> account:生成token
+account --> filter :返回token
+filter -> redis: 写入redis
+end
+filter -> filter : 写入用户信息到上下文
+filter -> image : 上传图片
+image -> image : 保存文件到指定路径
+image --> user: SUCCESS
+image -> mysql:保存审核记录，待审核
+note right: 表名：audit
+@enduml
