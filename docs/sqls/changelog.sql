@@ -9,6 +9,6 @@ create table audit(
                       id bigint primary key auto_increment,
                       student_id bigint not null comment '学号',
                       status tinyint not null comment '审核状态 0 待审核 1 通过，2 未通过',
-                      img_str varchar(10000) not null comment '图片地址'
+
 );
 

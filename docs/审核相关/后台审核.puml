@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Actor 刘照祺 as gui
+participant 审核Controller as audit
+database mysql
+autonumber
+
+gui->audit:发起审核请求
+audit -> mysql: 查询审核记录
+mysql --> audit: 返回待审核记录
+audit -> audit: 根据studentId从指定目录获取文件
+audit --> gui: 返回待审核记录
+
+gui -> audit: 审核结果
+audit -> mysql: 修改audit
+note right: audit表
+alt 审核通过
+
+audit -> mysql:修改student为已认证
+note right: student表
+else 审核不通过
+end
+audit -> gui: 认证结果
+@enduml
