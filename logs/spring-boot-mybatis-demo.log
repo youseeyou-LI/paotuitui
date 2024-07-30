@@ -11248,3 +11248,34 @@ java.lang.IllegalArgumentException: Unknown return value type: java.lang.Integer
 2024-07-28 19:36:17 INFO  c.g.spring.boot.Service.UserService - Fetching all users from the database
 2024-07-28 22:04:21 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-28 22:04:21 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-30 20:19:10 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 37547 (/Users/liguoshuai/IdeaProjects/paotuitui/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/paotuitui)
+2024-07-30 20:19:10 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-30 20:19:11 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2024-07-30 20:19:11 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.paotuitui'
+2024-07-30 20:19:11 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.paotuitui]' package. Please check your configuration.
+2024-07-30 20:19:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-07-30 20:19:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 997 ms
+2024-07-30 20:19:12 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-07-30 20:19:12 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2024-07-30 20:19:12 DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2024-07-30 20:19:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-07-30 20:19:12 INFO  com.paotuitui.Main - Started Main in 2.024 seconds (process running for 7.74)
+2024-07-30 20:19:12 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2024-07-30 20:19:22 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 37575 (/Users/liguoshuai/IdeaProjects/paotuitui/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/paotuitui)
+2024-07-30 20:19:22 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-30 20:19:23 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2024-07-30 20:19:23 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.paotuitui'
+2024-07-30 20:19:23 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.paotuitui]' package. Please check your configuration.
+2024-07-30 20:19:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2024-07-30 20:19:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2024-07-30 20:19:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-30 20:19:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-07-30 20:19:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-30 20:19:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 888 ms
+2024-07-30 20:19:24 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-07-30 20:19:24 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+2024-07-30 20:19:24 DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified.
+2024-07-30 20:19:24 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2024-07-30 20:19:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2024-07-30 20:19:24 INFO  com.paotuitui.Main - Started Main in 1.727 seconds (process running for 7.117)
+2024-07-30 20:19:42 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...

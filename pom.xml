@@ -68,6 +68,33 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version> <!-- 请检查是否有更新的版本 -->
+        </dependency>
+
+        <!-- 如果你使用jjwt-api, jjwt-impl, jjwt-jackson等模块化方式，请添加如下依赖 -->
+        <!-- jjwt-api -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.2</version> <!-- 使用最新版本 -->
+        </dependency>
+        <!-- jjwt-impl -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.11.2</version> <!-- 使用最新版本 -->
+            <scope>runtime</scope>
+        </dependency>
+        <!-- jjwt-jackson -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.11.2</version> <!-- 使用最新版本 -->
+            <scope>runtime</scope>
+        </dependency>
 
         <!--自动生成的类添加lombok注解等-->
         <dependency>
