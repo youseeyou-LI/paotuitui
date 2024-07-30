@@ -1,12 +1,12 @@
-2024-07-28 17:46:40 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 32267 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 17:46:40 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 17:46:40 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 32267 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 17:46:40 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 17:46:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 17:46:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 17:46:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 17:46:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 17:46:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 17:46:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 754 ms
-2024-07-28 17:46:41 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 17:46:41 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 17:46:41 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 17:46:41 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -19,22 +19,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 17:49:07 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 32552 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 17:49:07 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 17:49:07 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 32552 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 17:49:07 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 17:49:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 17:49:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 17:49:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 17:49:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 17:49:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 17:49:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 709 ms
-2024-07-28 17:49:07 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 17:49:07 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 17:49:07 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 17:49:07 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -47,22 +47,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 17:51:07 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 32756 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 17:51:07 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 17:51:07 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 32756 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 17:51:07 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 17:51:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 17:51:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 17:51:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 17:51:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 17:51:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 17:51:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 698 ms
-2024-07-28 17:51:07 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 17:51:07 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 17:51:07 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 17:51:07 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -75,22 +75,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 17:55:55 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 33121 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 17:55:55 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 17:55:55 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 33121 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 17:55:55 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 17:55:55 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 17:55:56 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 17:55:56 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 17:55:56 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 17:55:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 17:55:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 708 ms
-2024-07-28 17:55:56 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 17:55:56 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 17:55:56 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 17:55:56 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -103,22 +103,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:08:37 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 34263 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:08:37 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:08:37 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 34263 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:08:37 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:08:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:08:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:08:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:08:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:08:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:08:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 682 ms
-2024-07-28 18:08:37 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:08:37 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:08:37 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:08:37 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -131,22 +131,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:13:19 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 34613 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:13:19 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:13:19 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 34613 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:13:19 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:13:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:13:19 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:13:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:13:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:13:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:13:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 712 ms
-2024-07-28 18:13:20 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:13:20 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:13:20 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:13:20 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -159,22 +159,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:16:48 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 34899 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:16:48 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:16:48 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 34899 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:16:48 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:16:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:16:49 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:16:49 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:16:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:16:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:16:49 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 732 ms
-2024-07-28 18:16:49 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:16:49 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:16:49 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:16:49 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -187,22 +187,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:18:44 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 35232 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:18:44 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:18:44 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 35232 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:18:44 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:18:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:18:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:18:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:18:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:18:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:18:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 763 ms
-2024-07-28 18:18:45 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:18:45 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:18:45 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:18:45 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -215,22 +215,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:25:35 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 35740 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:25:35 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:25:35 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 35740 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:25:35 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:25:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:25:36 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:25:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:25:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:25:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:25:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 776 ms
-2024-07-28 18:25:36 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:25:36 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:25:36 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:25:36 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -243,22 +243,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:28:51 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 36064 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:28:51 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:28:51 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 36064 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:28:51 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:28:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:28:51 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:28:51 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:28:51 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:28:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:28:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 701 ms
-2024-07-28 18:28:51 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:28:51 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:28:51 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:28:51 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -271,22 +271,22 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:31:37 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 36275 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:31:37 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:31:37 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 36275 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:31:37 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:31:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
 2024-07-28 18:31:38 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
 2024-07-28 18:31:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
 2024-07-28 18:31:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
 2024-07-28 18:31:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:31:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
-2024-07-28 18:31:38 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:31:38 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:31:38 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:31:38 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -299,15 +299,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:49:43 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 37949 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:49:43 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:49:43 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 37949 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:49:43 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:49:43 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:49:43 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:49:43 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -317,7 +317,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:49:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:49:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:49:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 938 ms
-2024-07-28 18:49:44 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:49:44 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:49:44 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:49:44 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -330,15 +330,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:50:02 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 37968 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:50:02 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:50:02 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 37968 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:50:02 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:50:02 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:50:02 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:50:02 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -348,7 +348,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:50:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:50:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:50:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
-2024-07-28 18:50:03 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:50:03 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:50:03 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:50:03 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -361,15 +361,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:53:41 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 38305 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:53:41 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:53:41 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 38305 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:53:41 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:53:41 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:53:41 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:53:41 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -379,7 +379,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:53:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:53:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:53:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 861 ms
-2024-07-28 18:53:42 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:53:42 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:53:42 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:53:42 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -392,15 +392,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:54:20 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 38362 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:54:20 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:54:20 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 38362 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:54:20 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:54:21 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:54:21 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:54:21 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -410,7 +410,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:54:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:54:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:54:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 866 ms
-2024-07-28 18:54:21 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:54:21 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:54:21 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:54:21 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -423,15 +423,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:56:48 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 38581 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:56:48 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:56:48 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 38581 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:56:48 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:56:48 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:56:48 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:56:49 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -441,7 +441,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:56:49 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:56:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:56:49 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 947 ms
-2024-07-28 18:56:49 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:56:49 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:56:49 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:56:49 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -454,15 +454,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 18:59:21 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 38776 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 18:59:21 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 18:59:21 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 38776 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 18:59:21 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 18:59:22 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 18:59:22 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 18:59:22 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -472,7 +472,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 18:59:22 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 18:59:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 18:59:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 931 ms
-2024-07-28 18:59:22 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 18:59:22 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 18:59:22 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 18:59:22 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -485,15 +485,15 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 19:07:49 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 39743 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:07:49 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:07:49 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 39743 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:07:49 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:07:50 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
 2024-07-28 19:07:50 DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.guoshuai.spring.boot'
 2024-07-28 19:07:50 WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.guoshuai.spring.boot]' package. Please check your configuration.
@@ -503,7 +503,7 @@ Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in
 2024-07-28 19:07:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.1]
 2024-07-28 19:07:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2024-07-28 19:07:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 981 ms
-2024-07-28 19:07:50 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-07-28 19:07:50 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/Service/UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'mapper.com.paotuitui.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
 2024-07-28 19:07:50 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
 2024-07-28 19:07:50 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
@@ -516,17 +516,17 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 0 of constructor in com.guoshuai.spring.boot.Service.UserService required a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' that could not be found.
+Parameter 0 of constructor in Service.com.paotuitui.UserService required a bean of type 'mapper.com.paotuitui.UserMapper' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.guoshuai.spring.boot.mapper.UserMapper' in your configuration.
+Consider defining a bean of type 'mapper.com.paotuitui.UserMapper' in your configuration.
 
-2024-07-28 19:08:25 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 39785 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:08:25 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:08:25 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 39785 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:08:25 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:08:26 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:08:26 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:08:26 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:08:26 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:08:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2024-07-28 19:08:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
@@ -558,10 +558,10 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2024-07-28 19:10:41 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 39992 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:10:41 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:10:41 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 39992 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:10:41 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:10:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:10:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:10:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:10:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:10:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2024-07-28 19:10:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
@@ -593,10 +593,10 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
-2024-07-28 19:13:38 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40243 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:13:38 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:13:38 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40243 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:13:38 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:13:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:13:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:13:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:13:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:13:39 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
 2024-07-28 19:13:39 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
@@ -630,10 +630,10 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
-2024-07-28 19:14:02 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40267 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:14:02 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:14:02 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40267 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:14:02 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:14:03 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:14:03 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:14:03 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:14:03 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:14:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:14:03 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -645,15 +645,15 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-07-28 19:14:03 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:14:03 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:14:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:14:04 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.796 seconds (process running for 7.296)
+2024-07-28 19:14:04 INFO  com.paotuitui.Main - Started Main in 1.796 seconds (process running for 7.296)
 2024-07-28 19:14:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:14:18 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:14:18 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:14:23 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:14:52 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40416 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:14:52 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:14:52 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40416 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:14:52 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:14:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:14:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:14:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:14:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:14:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:14:53 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -665,7 +665,7 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-07-28 19:14:53 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:14:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:14:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:14:53 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.887 seconds (process running for 7.376)
+2024-07-28 19:14:53 INFO  com.paotuitui.Main - Started Main in 1.887 seconds (process running for 7.376)
 2024-07-28 19:15:10 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:15:10 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:15:10 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -2583,10 +2583,10 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
 	... 6 common frames omitted
-2024-07-28 19:16:32 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40504 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:16:32 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:16:32 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40504 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:16:32 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:16:32 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:16:32 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:16:32 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:16:32 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:16:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:16:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2598,15 +2598,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:16:33 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:16:33 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:16:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:16:33 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.595 seconds (process running for 7.029)
+2024-07-28 19:16:33 INFO  com.paotuitui.Main - Started Main in 1.595 seconds (process running for 7.029)
 2024-07-28 19:16:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:16:33 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:16:33 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:17:09 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:17:24 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40569 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:17:24 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:17:24 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40569 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:17:24 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:17:25 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:17:25 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:17:25 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:17:25 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:17:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:17:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2618,15 +2618,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:17:25 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:17:26 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:17:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:17:26 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.96 seconds (process running for 7.507)
+2024-07-28 19:17:26 INFO  com.paotuitui.Main - Started Main in 1.96 seconds (process running for 7.507)
 2024-07-28 19:17:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:17:26 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:17:26 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 2024-07-28 19:18:05 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:18:37 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40811 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:18:37 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:18:37 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40811 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:18:37 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:18:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:18:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:18:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:18:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:18:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:18:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2638,15 +2638,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:18:38 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:18:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:18:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:18:38 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.764 seconds (process running for 7.274)
+2024-07-28 19:18:38 INFO  com.paotuitui.Main - Started Main in 1.764 seconds (process running for 7.274)
 2024-07-28 19:18:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:18:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:18:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 2024-07-28 19:19:02 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:19:14 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40855 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:19:14 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:19:14 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40855 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:19:14 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:19:15 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:19:15 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:19:15 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:19:15 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:19:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:19:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2658,15 +2658,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:19:15 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:19:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:19:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:19:15 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.602 seconds (process running for 7.13)
+2024-07-28 19:19:15 INFO  com.paotuitui.Main - Started Main in 1.602 seconds (process running for 7.13)
 2024-07-28 19:19:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:19:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:19:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:19:38 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:20:06 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 40923 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:20:06 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:20:06 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 40923 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:20:06 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:20:07 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:20:07 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:20:07 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:20:07 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:20:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:20:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2678,15 +2678,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:20:08 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:20:08 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:20:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:20:08 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.837 seconds (process running for 7.238)
+2024-07-28 19:20:08 INFO  com.paotuitui.Main - Started Main in 1.837 seconds (process running for 7.238)
 2024-07-28 19:20:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:20:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:20:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:20:13 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:20:42 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41028 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:20:42 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:20:42 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41028 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:20:42 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:20:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:20:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:20:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:20:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:20:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:20:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2698,15 +2698,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:20:43 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:20:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:20:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:20:43 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.666 seconds (process running for 7.14)
+2024-07-28 19:20:43 INFO  com.paotuitui.Main - Started Main in 1.666 seconds (process running for 7.14)
 2024-07-28 19:20:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:20:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:20:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:21:17 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:21:29 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41082 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:21:29 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:21:29 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41082 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:21:29 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:21:30 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:21:30 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:21:30 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:21:30 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:21:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:21:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2718,15 +2718,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:21:31 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:21:31 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:21:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:21:31 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.278 seconds (process running for 7.954)
+2024-07-28 19:21:31 INFO  com.paotuitui.Main - Started Main in 2.278 seconds (process running for 7.954)
 2024-07-28 19:21:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:21:31 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:21:31 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:21:50 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:22:07 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41136 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:22:07 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:22:07 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41136 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:22:07 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:22:08 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:22:08 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:22:08 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:22:08 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:22:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:22:08 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2738,15 +2738,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:22:09 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:22:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:22:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:22:09 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.239 seconds (process running for 7.925)
+2024-07-28 19:22:09 INFO  com.paotuitui.Main - Started Main in 2.239 seconds (process running for 7.925)
 2024-07-28 19:22:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:22:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:22:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:22:33 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:22:50 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41208 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:22:50 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:22:50 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41208 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:22:50 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:22:50 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:22:50 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:22:50 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:22:50 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:22:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:22:51 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2758,15 +2758,15 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:22:51 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:22:52 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:22:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:22:52 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.144 seconds (process running for 7.787)
+2024-07-28 19:22:52 INFO  com.paotuitui.Main - Started Main in 2.144 seconds (process running for 7.787)
 2024-07-28 19:22:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:22:54 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:22:54 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2024-07-28 19:23:05 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2024-07-28 19:23:44 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41337 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:23:44 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:23:44 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41337 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:23:44 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:23:44 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:23:44 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:23:44 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:23:44 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:23:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:23:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -2778,7 +2778,7 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:23:45 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:23:45 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:23:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:23:45 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.758 seconds (process running for 7.228)
+2024-07-28 19:23:45 INFO  com.paotuitui.Main - Started Main in 1.758 seconds (process running for 7.228)
 2024-07-28 19:23:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:23:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:23:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -6988,10 +6988,10 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
 	... 6 common frames omitted
-2024-07-28 19:25:39 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41465 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:25:39 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:25:39 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41465 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:25:39 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:25:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:25:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:25:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:25:39 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:25:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:25:40 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -7003,7 +7003,7 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:25:40 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:25:40 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:25:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:25:40 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.935 seconds (process running for 7.601)
+2024-07-28 19:25:40 INFO  com.paotuitui.Main - Started Main in 1.935 seconds (process running for 7.601)
 2024-07-28 19:25:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:25:50 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:25:50 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -7870,10 +7870,10 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
 	... 6 common frames omitted
-2024-07-28 19:27:13 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41634 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:27:13 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:27:13 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41634 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:27:13 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:27:13 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:27:13 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:27:13 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:27:13 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:27:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:27:14 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -7885,7 +7885,7 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:27:14 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:27:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:27:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:27:14 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.526 seconds (process running for 8.222)
+2024-07-28 19:27:14 INFO  com.paotuitui.Main - Started Main in 2.526 seconds (process running for 8.222)
 2024-07-28 19:27:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:27:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:27:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
@@ -9239,10 +9239,10 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
 	... 6 common frames omitted
-2024-07-28 19:27:51 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41710 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:27:51 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:27:51 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41710 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:27:51 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:27:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:27:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:27:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:27:52 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:27:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:27:52 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -9254,7 +9254,7 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:27:52 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:27:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:27:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:27:53 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.142 seconds (process running for 7.754)
+2024-07-28 19:27:53 INFO  com.paotuitui.Main - Started Main in 2.142 seconds (process running for 7.754)
 2024-07-28 19:28:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:28:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:28:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -10764,10 +10764,10 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948)
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818)
 	... 6 common frames omitted
-2024-07-28 19:28:41 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 41779 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:28:41 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:28:41 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 41779 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:28:41 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:28:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:28:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:28:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:28:42 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:28:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:28:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -10779,7 +10779,7 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-28 19:28:43 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:28:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:28:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:28:43 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.91 seconds (process running for 7.543)
+2024-07-28 19:28:43 INFO  com.paotuitui.Main - Started Main in 1.91 seconds (process running for 7.543)
 2024-07-28 19:29:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:29:07 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:29:07 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -11036,10 +11036,10 @@ jakarta.servlet.ServletException: Circular view path [users]: would dispatch bac
 	at java.base/java.lang.Thread.run(Thread.java:840)
 2024-07-28 19:30:28 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-28 19:30:28 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-2024-07-28 19:32:04 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 42159 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:32:04 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:32:04 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 42159 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:32:04 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:32:04 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:32:04 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:32:04 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:32:04 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:32:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:32:05 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -11051,7 +11051,7 @@ jakarta.servlet.ServletException: Circular view path [users]: would dispatch bac
 2024-07-28 19:32:05 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:32:06 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:32:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:32:06 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.292 seconds (process running for 7.905)
+2024-07-28 19:32:06 INFO  com.paotuitui.Main - Started Main in 2.292 seconds (process running for 7.905)
 2024-07-28 19:32:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:32:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:32:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
@@ -11106,10 +11106,10 @@ java.lang.IllegalArgumentException: Unknown return value type: java.lang.Integer
 	at java.base/java.lang.Thread.run(Thread.java:840)
 2024-07-28 19:35:24 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-28 19:35:24 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-2024-07-28 19:35:36 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 42570 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:35:36 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:35:36 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 42570 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:35:36 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:35:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:35:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:35:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:35:37 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:35:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:35:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -11121,7 +11121,7 @@ java.lang.IllegalArgumentException: Unknown return value type: java.lang.Integer
 2024-07-28 19:35:38 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:35:38 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:35:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:35:38 INFO  com.guoshuai.spring.boot.Main - Started Main in 2.213 seconds (process running for 7.839)
+2024-07-28 19:35:38 INFO  com.paotuitui.Main - Started Main in 2.213 seconds (process running for 7.839)
 2024-07-28 19:35:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:35:38 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:35:38 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
@@ -11224,10 +11224,10 @@ java.lang.IllegalArgumentException: Unknown return value type: java.lang.Integer
 	at java.base/java.lang.Thread.run(Thread.java:840)
 2024-07-28 19:35:55 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-28 19:35:55 INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-2024-07-28 19:36:11 INFO  com.guoshuai.spring.boot.Main - Starting Main using Java 17.0.11 with PID 42656 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
-2024-07-28 19:36:11 INFO  com.guoshuai.spring.boot.Main - No active profile set, falling back to 1 default profile: "default"
+2024-07-28 19:36:11 INFO  com.paotuitui.Main - Starting Main using Java 17.0.11 with PID 42656 (/Users/liguoshuai/IdeaProjects/testpost/target/classes started by liguoshuai in /Users/liguoshuai/IdeaProjects/testpost)
+2024-07-28 19:36:11 INFO  com.paotuitui.Main - No active profile set, falling back to 1 default profile: "default"
 2024-07-28 19:36:12 DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/com/guoshuai/spring/boot/mapper/UserMapper.class]
-2024-07-28 19:36:12 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.guoshuai.spring.boot.mapper.UserMapper' mapperInterface
+2024-07-28 19:36:12 DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'mapper.com.paotuitui.UserMapper' mapperInterface
 2024-07-28 19:36:12 DEBUG o.m.s.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
 2024-07-28 19:36:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
 2024-07-28 19:36:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
@@ -11239,7 +11239,7 @@ java.lang.IllegalArgumentException: Unknown return value type: java.lang.Integer
 2024-07-28 19:36:12 DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/liguoshuai/IdeaProjects/testpost/target/classes/mapper/UserMapper.xml]'
 2024-07-28 19:36:13 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
 2024-07-28 19:36:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
-2024-07-28 19:36:13 INFO  com.guoshuai.spring.boot.Main - Started Main in 1.93 seconds (process running for 7.551)
+2024-07-28 19:36:13 INFO  com.paotuitui.Main - Started Main in 1.93 seconds (process running for 7.551)
 2024-07-28 19:36:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-07-28 19:36:16 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2024-07-28 19:36:16 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
