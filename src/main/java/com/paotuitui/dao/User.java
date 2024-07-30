@@ -1,4 +1,4 @@
-package com.guoshuai.spring.boot.dao;
+package com.paotuitui.dao;
 
 import org.springframework.stereotype.Repository;
 public class User {

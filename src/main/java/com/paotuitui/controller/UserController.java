@@ -1,7 +1,7 @@
-package com.guoshuai.spring.boot.controll;
+package com.paotuitui.controller;
 
 
-import com.guoshuai.spring.boot.Service.UserService;
+import com.paotuitui.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

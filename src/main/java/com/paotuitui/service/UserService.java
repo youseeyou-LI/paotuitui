@@ -1,5 +1,5 @@
-package com.guoshuai.spring.boot.Service;
-import com.guoshuai.spring.boot.mapper.UserMapper;
+package com.paotuitui.service;
+import com.paotuitui.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
