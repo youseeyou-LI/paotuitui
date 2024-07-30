@@ -5,7 +5,7 @@
 
 <generatorConfiguration>
     <context id="tables" targetRuntime="MyBatis3">
-
+        <plugin type="com.itfsw.mybatis.generator.plugins.LombokPlugin"/>
         <!--提示：插件不能重复配置，否则在同一个类中会生成相同的代码-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
@@ -25,9 +25,9 @@
 
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.233.131.24:5002/megatron?characterEncoding=UTF8&amp;socketTimeout=60000&amp;allowMultiQueries=true"
-                        userId="root"
-                        password="guoshuai"/>
+                        connectionURL="jdbc:mysql://rm-bp1kp7ip9p4sfy63q7o.mysql.rds.aliyuncs.com:3306/paotuitui?characterEncoding=UTF8&amp;socketTimeout=60000&amp;allowMultiQueries=true"
+                        userId="paotuitui"
+                        password="Paotuitui123"/>
 
 
         <javaTypeResolver>
@@ -35,7 +35,7 @@
         </javaTypeResolver>
 
 
-        <javaModelGenerator targetPackage="com.paotuitui.service.dao.domain"
+        <javaModelGenerator targetPackage="com.paotuitui.domain"
                             targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
@@ -46,13 +46,17 @@
         </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.paotuitui.service.service.dao.mapper"
+                             targetPackage="com.paotuitui.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 
-        <table tableName="city_task_completion" domainObjectName="CityTaskCompletionDO">
+        <table tableName="user" domainObjectName="User">
+            <columnOverride column="status" property="" javaType="java.lang.Integer"/>
+        </table>
+        <table tableName="audit" domainObjectName="Audit">
+            <columnOverride column="status" property="" javaType="java.lang.Integer"/>
         </table>
 
     </context>

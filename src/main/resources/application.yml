@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/paotuitui?useSSL=false&serverTimezone=UTC
-    username: root
-    password: guoshuai
+    url: jdbc:mysql://rm-bp1kp7ip9p4sfy63q7o.mysql.rds.aliyuncs.com:3306/paotuitui?useSSL=false&serverTimezone=UTC
+    username: paotuitui
+    password: Paotuitui123
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       # Druid连接池配置
